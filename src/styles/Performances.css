@@ -1,0 +1,128 @@
+.total-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url('/main_image.jpg') no-repeat center center fixed;
+  background-size: cover; /*사진이 창을 다 채우도록 함*/
+  color: white;
+}
+
+.overlay-box {
+  position: absolute;box-direction: ;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* 반투명 검정 */
+    z-index: 1;
+}
+
+.title-container {
+  width: 100%;
+  padding: 20px 0;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index:10;
+  position: absolute;
+  top: 60px;
+}
+
+.title-image-stage {
+  height: 61px;
+  width: 100px;
+}
+
+.table-container {
+  z-index: 10;
+  position: absolute;
+  top: 220px;
+  width: 90%;
+  min-width: 800px;
+  height: 550px;
+}
+
+.performance-table {
+  width: 100%;
+  height: 100%;
+  padding: 20px 30px;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+}
+
+.performance-table thead {
+  color: #039CE0;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.performance-table tr {
+  height: 50px;
+}
+
+.performance-table th:nth-child(1), /* 배틀명 */
+.performance-table td:nth-child(1) {
+    width: 30%; /* 첫 번째 열 (배틀명) */
+}
+
+.performance-table th:nth-child(2), /* 날짜 */
+.performance-table td:nth-child(2) {
+    width: 10%; /* 두 번째 열 (날짜) */
+}
+
+.performance-table th:nth-child(3), /* 우승자 */
+.performance-table td:nth-child(3) {
+    width: 10%; /* 세 번째 열 (우승자) */
+}
+
+.performance-table th:nth-child(4), /* MVP */
+.performance-table td:nth-child(4) {
+    width: 45%; /* 네 번째 열 (MVP) */
+}
+
+.performance-table th:nth-child(5), /* 저지 */
+.performance-table td:nth-child(5) {
+    width: 10%; /* 다섯 번째 열 (저지) */
+}
+
+
+.pagination {
+  z-index: 10;
+  position: absolute;
+  top: 870px;
+}
+
+.page-button{
+  width: 20px;
+  height: 20px;
+  color: white;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.page-button.active {
+  font-weight: bold;
+}
+
+.page-button.active::before {
+  content: "";
+  position: absolute;
+  top: -5px;  /* 버튼의 위쪽에 배치 */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 3px;
+  background: #DD077D;
+  border-radius: 2px;
+}
+
+.youtube-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}

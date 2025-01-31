@@ -1,0 +1,102 @@
+.total-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: url('/main_image.jpg') no-repeat center center fixed;
+    background-size: cover; /*사진이 창을 다 채우도록 함*/
+    min-height: 100vh;
+    width: 100vw;
+  }
+  
+  /* 배경 위에 반투명 오버레이 */
+  .overlay-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* 반투명 검정 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* 타이틀 컨테이너 */
+  .title-container {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    top: 100px;
+  }
+  
+  
+  .title-text {
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  /* 테이블 컨테이너 */
+  .table-container {
+    width: 90%;
+    max-width: 1000px; /* 표의 가로 크기 고정 */
+    min-height: 500px; /* 표의 최소 높이 유지 */
+    overflow: visible; /* 📌 내부 스크롤 제거 */
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 100px;
+  }
+  
+  /* 배틀 테이블 */
+  .battle-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    table-layout: fixed; /* 모든 열 크기 균등하게 */
+  }
+  
+
+  
+  .empty-row {
+    height: 50px; /* 빈 행의 높이 지정 */
+    background-color: rgba(255, 255, 255, 0.05); /* 미묘한 배경 */
+  }
+  
+  /* 모든 행의 높이 동일하게 유지 */
+  .battle-table tr {
+    height: 50px; /* 모든 행의 높이 고정 */
+  }
+  
+  .battle-table th, .battle-table td {
+    padding: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  /*column 명 적혀있는 행 background*/
+  .battle-table th { 
+    background: rgba(255, 255, 255, 0.2);
+    font-size: 1rem;
+    color: #039CE0;
+  }
+  
+  .battle-table td {
+    font-size: 0.9rem;
+  }
+  
+  .battle-table a {
+    color: #ffcc00;
+    text-decoration: none;
+  }
+  
+  .battle-table a:hover {
+    text-decoration: underline;
+  }
+  
+  .battle-table tr:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
